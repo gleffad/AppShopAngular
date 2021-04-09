@@ -1,0 +1,7 @@
+<app-header></app-header>
+<ion-content>
+  <p>Restaurants partenaires</p>
+  <ion-item *ngFor="let restaurant of restaurants">
+    <app-button [name]="restaurant.name" [link]="'./restaurant'" [data]="restaurant"></app-button>
+  </ion-item>
+</ion-content>

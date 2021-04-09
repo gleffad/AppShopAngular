@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<ion-content>
+
+  <p>Choisissez votre catégorie de produits</p>
+
+  <ion-item *ngFor="let product of products">
+    <app-product [key]="product.name"></app-product>
+  </ion-item>
+  
+</ion-content>
